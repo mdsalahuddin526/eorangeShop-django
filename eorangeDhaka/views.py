@@ -8,7 +8,5 @@ def index(request):
     }
     return render (request,'eorange/index.html', context)
 
-def cart(request):
-    return render (request,'eorange/cart.html')
 
 
