@@ -19,33 +19,6 @@ from carts.views import _cart_id
 from carts.models import Cart,CartItem
 import requests
 
-'''def signup(request):
-    if request.method == 'POST':
-        first_name = request.POST['first_name']
-        last_name = request.POST['last_name']
-        username = request.POST['username']
-        email = request.POST['email']
-        password = request.POST['password']
-        password2 = request.POST['password2']
-        if password==password2:
-            if User.objects.filter(username=username).exists():
-                messages.error(request,'Username already exist')
-                return redirect('signup')
-            else:
-                if User.objects.filter(email=email).exists():
-                    messages.error(request,'This email is being used')
-                    return redirect('signup')
-                else:
-                    user = User.objects.create_user(first_name=first_name,last_name=last_name,
-                    username=username,email=email,password=password)
-                    auth.login(request,user)
-                    messages.success(request,'You are registered')
-                    return redirect('index')            
-        else:
-            messages.error(request,'Password not match')
-            return redirect('signup')
-    else:
-        return render (request,'accounts/signup.html')'''
 
 def signup(request):
     if request.method == 'POST':
