@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.contrib.admin.decorators import display
+#from django.contrib.admin.decorators import display
 from .models import Category
 
 @admin.register(Category)
